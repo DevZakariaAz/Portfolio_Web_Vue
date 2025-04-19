@@ -1,0 +1,121 @@
+[
+    {
+        "id": 1,
+        "name": "Laravel",
+        "level": "Advanced",
+        "category": "Backend Development",
+        "icon": "<i class='fa-brands fa-laravel'></i>"
+    },
+    {
+        "id": 2,
+        "name": "Vue.js",
+        "level": "Intermediate",
+        "category": "Frontend Development",
+        "icon": "<i class='fa-brands fa-vuejs'></i>"
+    },
+    {
+        "id": 3,
+        "name": "JavaScript",
+        "level": "Intermediate",
+        "category": "Frontend Development",
+        "icon": "<i class='fa-brands fa-js-square'></i>"
+    },
+    {
+        "id": 4,
+        "name": "Tailwind CSS",
+        "level": "Intermediate",
+        "category": "Frontend Development",
+        "icon": "<i class='fab fa-tailwindcss'></i>"
+    },
+    {
+        "id": 5,
+        "name": "Bootstrap",
+        "level": "Intermediate",
+        "category": "Frontend Development",
+        "icon": "<i class='fab fa-bootstrap'></i>"
+    },
+    {
+        "id": 6,
+        "name": "MySQL",
+        "level": "Advanced",
+        "category": "Database Management",
+        "icon": "<i class='fas fa-database'></i>"
+    },
+    {
+        "id": 7,
+        "name": "PHP",
+        "level": "Advanced",
+        "category": "Backend Development",
+        "icon": "<i class='fab fa-php'></i>"
+    },
+    {
+        "id": 8,
+        "name": "HTML",
+        "level": "Advanced",
+        "category": "Frontend Development",
+        "icon": "<i class='fab fa-html5'></i>"
+    },
+    {
+        "id": 9,
+        "name": "CSS",
+        "level": "Intermediate",
+        "category": "Frontend Development",
+        "icon": "<i class='fab fa-css3-alt'></i>"
+    },
+    {
+        "id": 10,
+        "name": "Git",
+        "level": "Advanced",
+        "category": "Version Control",
+        "icon": "<i class='fab fa-git'></i>"
+    },
+    {
+        "id": 11,
+        "name": "GitHub",
+        "level": "Advanced",
+        "category": "Version Control",
+        "icon": "<i class='fab fa-github'></i>"
+    },
+    {
+        "id": 12,
+        "name": "Figma",
+        "level": "Intermediate",
+        "category": "Design",
+        "icon": "<i class='fab fa-figma'></i>"
+    },
+    {
+        "id": 13,
+        "name": "Networking Basics",
+        "level": "Beginner",
+        "category": "Networking",
+        "icon": "<i class='fas fa-network-wired'></i>"
+    },
+    {
+        "id": 14,
+        "name": "Docker",
+        "level": "Beginner",
+        "category": "DevOps",
+        "icon": "<i class='fab fa-docker'></i>"
+    },
+    {
+        "id": 15,
+        "name": "Markdown",
+        "level": "Intermediate",
+        "category": "Documentation",
+        "icon": "<i class='fab fa-markdown'></i>"
+    },
+    {
+        "id": 16,
+        "name": "SQL",
+        "level": "Advanced",
+        "category": "Database Management",
+        "icon": "<i class='fas fa-database'></i>"
+    },
+    {
+        "id": 17,
+        "name": "Wordpress",
+        "level": "Intermediate",
+        "category": "CMS",
+        "icon": "<i class='fab fa-wordpress'></i>"
+    }
+]

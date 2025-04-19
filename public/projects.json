@@ -1,0 +1,94 @@
+[
+  {
+    "id": 3,
+    "name": "E-commerce Website",
+    "description": "A Laravel 11 and Vue 3 e-commerce website.",
+    "status": "in-progress",
+    "demo": "#",
+    "github": "https://github.com/DevZakariaAz/E-Commerce_Watch_Store.git",
+    "image": "/images/e-commerce.png",
+    "technologies": [
+      "Laravel",
+      "Vue.js",
+      "TailwindCSS",
+      "MySQL"
+    ],
+    "role": "Full-stack Developer - Responsible for building the back-end with Laravel, integrating it with Vue.js for dynamic UI, and ensuring proper database management."
+  },
+  {
+    "id": 4,
+    "name": "Portfolio Website",
+    "description": "A personal portfolio showcasing projects, skills, and experience, built with Vue.js and TailwindCSS.",
+    "status": "active",
+    "demo": "#",
+    "github": "https://github.com/Tribak-Ayoub/my-portfolio",
+    "image": "/images/my-portfolio.png",
+    "technologies": [
+      "Vue.js",
+      "TailwindCSS",
+      "Vercel"
+    ],
+    "role": "Front-end Developer - Built a responsive portfolio with Vue.js and TailwindCSS, ensuring a smooth user experience and fast performance."
+  },
+  {
+    "id": 5,
+    "name": "TechLab Pro",
+    "description": "A mobile application designed for biomedical laboratory technicians, students, and residents to manage techniques, reagents, and interactive learning.",
+    "status": "in-progress",
+    "demo": "#",
+    "github": "https://github.com/your-username/techlab-pro",
+    "image": "/images/techlab-pro.png",
+    "technologies": [
+      "Flutter",
+      "SQLite",
+      "Firebase"
+    ],
+    "role": "Project Manager & Lead Developer - Oversaw project development, working on both the front-end and back-end aspects, integrating features such as timers, reagent management, and interactive learning tools."
+  },
+  {
+    "id": 6,
+    "name": "Gestion d'Absence",
+    "description": "An application designed to help teachers easily track and manage student absenteeism, ensuring accurate and quick records.",
+    "status": "in-progress",
+    "demo": "#",
+    "github": "https://github.com/your-username/gestion-absence",
+    "image": "/images/gestion-absence.png",
+    "technologies": [
+      "Laravel",
+      "Vue.js",
+      "TailwindCSS",
+      "MySQL"
+    ],
+    "role": "Full-stack Developer - Built the back-end with Laravel and integrated it with Vue.js for a user-friendly experience."
+  },
+  {
+    "id": 7,
+    "name": "Blog Project",
+    "description": "A simple blog platform where users can create, edit, and comment on posts.",
+    "status": "active",
+    "demo": "https://blog-main-8hbpjl.laravel.cloud/dashboard",
+    "github": "https://github.com/your-username/blog-project",
+    "image": "/images/blog-project.png",
+    "technologies": [
+      "Laravel",
+      "Vue.js",
+      "TailwindCSS",
+      "MySQL"
+    ],
+    "role": "Full-stack Developer - Designed and developed the blog's back-end with Laravel and created a dynamic front-end with Vue.js."
+  },
+  {
+    "id": 8,
+    "name": "To-Do List",
+    "description": "A simple task management app to keep track of daily tasks.",
+    "status": "active",
+    "github": "https://github.com/your-username/todo-list",
+    "image": "/images/todo-list.png",
+    "technologies": [
+      "Vue.js",
+      "TailwindCSS",
+      "Firebase"
+    ],
+    "role": "Front-end Developer - Developed the entire front-end with Vue.js and integrated it with Firebase for real-time updates."
+  }
+]

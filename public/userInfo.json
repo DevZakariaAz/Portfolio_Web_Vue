@@ -1,0 +1,77 @@
+{
+  "FirstName": "Zakaria",
+  "LastName": "Azizi",
+  "title": "Full Stack Developer | Laravel & Vue.js",
+  "location": "Tanger, Morocco",
+  "Email": "Zakaria.Azizi.v1@gmail.com",
+  "Phone": "+212 634 434 178",
+  "LinkedIn": "https://www.linkedin.com/in/zakaria-azizi-v1",
+  "Github": "https://github.com/DevZakariaAz",
+  "Summary": "Motivated Full Stack Developer specializing in Laravel and Vue.js. Experienced in building responsive web applications and scalable backend systems. Passionate about modern development tools, clean code, and continuous learning.",
+  "About": "I'm Zakaria Azizi, a Full Stack Developer focused on creating intuitive digital experiences using Laravel, Vue.js, and modern web technologies. I enjoy turning complex problems into elegant solutions, always aiming for performance, scalability, and user satisfaction. My journey in development is driven by a deep interest in technology, design thinking, and collaboration. I'm currently honing my skills through personal and collaborative projects, always striving to learn and grow as a developer.",
+  "Languages": [
+    {
+      "name": "Arabic",
+      "level": "Native"
+    },
+    {
+      "name": "French",
+      "level": "Intermediate"
+    },
+    {
+      "name": "English",
+      "level": "Upper-intermediate"
+    }
+  ],
+  "Educations": [
+    {
+      "id": 1,
+      "title": "Web & Mobile Development",
+      "location": "SoliCode Tanger, Morocco",
+      "description": "Studying Frontend & Backend Development with a focus on Laravel, Vue.js, and Kotlin for Mobile Development.",
+      "start_date": "2024-09-01",
+      "end_date": "Present"
+    },
+    {
+      "id": 2,
+      "title": "Web Development",
+      "location": "SoliCode Tanger, Morocco",
+      "description": "Studied Frontend & Backend Development, focusing on PHP, JavaScript.",
+      "start_date": "2023-09-01",
+      "end_date": "2024-05-01"
+    },
+    {
+      "id": 3,
+      "title": "High School Diploma (Baccalaureate)",
+      "location": "Tanger, Morocco",
+      "description": "Completed secondary education with a focus on scientific and technical studies.",
+      "start_date": "2022-09-01",
+      "end_date": "2023-05-01"
+    }
+  ],
+  "Certifications": [
+    {
+      "id": 1,
+      "title": "Git & GitHub Workshop",
+      "issuer": "SoliCode Tanger",
+      "date": "2024-02-01",
+      "description": "Conducted a workshop on Git and GitHub, covering version control, branches, pull requests, and best practices."
+    },
+    {
+      "id": 2,
+      "title": "Fundamentals of Computer Networking Workshop",
+      "issuer": "SoliCode Tanger",
+      "date": "2024-02-15",
+      "description": "Delivered a workshop on networking concepts, including IP addressing, network models, and protocols."
+    }
+  ],
+  "AdditionalSkills": [
+    "Problem-solving",
+    "Teamwork",
+    "Time Management",
+    "Adaptability",
+    "Communication Skills",
+    "Agile Methodology",
+    "Git & GitHub Workflow"
+  ]
+}
