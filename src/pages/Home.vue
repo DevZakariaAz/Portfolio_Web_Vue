@@ -12,7 +12,10 @@
             <section id="projects" class="mt-10">
                 <ProjectsCard />
             </section>
-            <section id="contact" class="mt-20 bg-gray-50 py-10 px-4">
+            <section id="certifications" class="mt-10">
+                <CertificationsSection /> 
+            </section>
+            <section id="contact" class=" bg-gray-50 ">
                 <ContactForm />
             </section>
             <Footer />
@@ -26,6 +29,7 @@ import HeroSection from '../components/HeroSection.vue';
 import AboutSection from '../components/AboutSection.vue';
 import SkillsSection from '../components/SkillsSection.vue';
 import ProjectsCard from '../components/ProjectsCard.vue';
+import CertificationsSection from '../components/CertificationsSection.vue';
 import ContactForm from '../components/ContactForm.vue';
 import Footer from '../components/Footer.vue';
 </script>

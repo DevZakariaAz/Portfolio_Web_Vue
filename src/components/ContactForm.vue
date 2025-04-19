@@ -1,95 +1,97 @@
 <template>
-    <div class="max-w-lg mx-auto bg-white rounded-2xl shadow-lg p-8 py-10 mt-10 mb-10">
-        <h2 class="text-3xl font-bold text-gray-900 text-center">Contact Me</h2>
-        <p class="text-gray-500 text-center mt-2">Let's get in touch! Fill out the form below.</p>
+    <div class="min-h-screen bg-gray-100 flex items-center justify-center relative overflow-hidden">
+        <!-- Moving Button -->
+        <button @click="handleClick" :class="[
+            'absolute px-6 py-3 bg-primary text-white rounded-xl font-bold text-lg transition-all duration-700 ease-in-out',
+            moveRight ? 'translate-x-[300px] rotate-6' : 'translate-x-0',
+            'z-20'
+        ]">
+            {{ showForm ? 'Wait for it...' : 'Click Me to Contact 😎' }}
+        </button>
 
         <!-- Contact Form -->
-        <form @submit.prevent="handleSubmit" class="mt-6 space-y-5">
-            <div>
-                <label for="name" class="block text-gray-700 font-semibold">Your Name</label>
-                <input v-model="form.name" type="text" id="name" placeholder="John Doe"
-                    class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-primary focus:outline-none focus:border-primary"
-                    required />
+        <transition name="raindrop">
+            <div v-if="showForm"
+                class="absolute top-20 w-[90%] max-w-md bg-white shadow-xl rounded-2xl p-6 z-10 animate__animated animate__fadeInDown">
+                <button @click="handleClose"
+                    class="absolute top-3 right-3 text-gray-400 hover:text-red-500 text-xl font-bold">
+                    &times;
+                </button>
+
+                <h2 class="text-2xl font-bold mb-3 text-gray-800">📬 Contact Me</h2>
+                <p class="text-sm text-gray-500 mb-5">Let’s connect & create something awesome!</p>
+
+                <form @submit.prevent="handleSubmit" class="space-y-4">
+                    <input v-model="form.name" type="text" placeholder="Your name"
+                        class="w-full px-4 py-2 border rounded-lg focus:ring-primary focus:ring-2 outline-none"
+                        required />
+                    <input v-model="form.email" type="email" placeholder="Email address"
+                        class="w-full px-4 py-2 border rounded-lg focus:ring-primary focus:ring-2 outline-none"
+                        required />
+                    <textarea v-model="form.message" rows="3" placeholder="Type your message..."
+                        class="w-full px-4 py-2 border rounded-lg focus:ring-primary focus:ring-2 outline-none"
+                        required></textarea>
+                    <button type="submit"
+                        class="w-full py-2 bg-primary text-white rounded-lg font-semibold hover:bg-yellow-500 transition-all duration-300">
+                        Send 🚀
+                    </button>
+                </form>
+                <p v-if="successMessage" class="text-green-500 text-sm mt-2">{{ successMessage }}</p>
             </div>
-
-            <div>
-                <label for="email" class="block text-gray-700 font-semibold">Email Address</label>
-                <input v-model="form.email" type="email" id="email" placeholder="you@example.com"
-                    class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-primary focus:outline-none focus:border-primary"
-                    required />
-            </div>
-
-            <div>
-                <label for="message" class="block text-gray-700 font-semibold">Your Message</label>
-                <textarea v-model="form.message" id="message" rows="4" placeholder="Type your message here..."
-                    class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-primary focus:outline-none focus:border-primary"
-                    required></textarea>
-            </div>
-
-            <button type="submit" :disabled="loading"
-                class="w-full py-3 bg-primary text-white font-bold rounded-lg shadow-md hover:bg-yellow-500 transition duration-300 flex justify-center items-center disabled:opacity-50 disabled:cursor-not-allowed">
-                <svg v-if="loading" class="animate-spin h-5 w-5 mr-3 text-white" fill="none" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4l3-3-3-3V4a8 8 0 00-8 8H4z">
-                    </path>
-                </svg>
-                {{ loading ? "Sending..." : "Send Message" }}
-            </button>
-
-            <p v-if="successMessage" class="text-green-600 text-center font-semibold text-sm mt-2">
-                {{ successMessage }}
-            </p>
-            <p v-if="errorMessage" class="text-red-500 text-center font-semibold text-sm mt-2">
-                {{ errorMessage }}
-            </p>
-        </form>
+        </transition>
     </div>
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue';
-import emailjs from 'emailjs-com';
-
-const form = ref({
-    name: '',
-    email: '',
-    message: ''
-});
-
-const loading = ref(false);
-const successMessage = ref('');
-const errorMessage = ref('');
-
-// Initialize EmailJS when component is mounted
-onMounted(() => {
-    emailjs.init(import.meta.env.VITE_EMAILJS_USER_ID);
-});
-
-const handleSubmit = async () => {
-    loading.value = true;
+import { ref } from 'vue';
+const handleClose = () => {
+    showForm.value = false;
+    moveRight.value = false;
     successMessage.value = '';
-    errorMessage.value = '';
+};
 
-    // EmailJS credentials
-    const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-    const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const showForm = ref(false);
+const moveRight = ref(false);
+const form = ref({ name: '', email: '', message: '' });
+const successMessage = ref('');
 
-    const templateParams = {
-        name: form.value.name,
-        email: form.value.email,
-        message: form.value.message
-    };
+const handleClick = () => {
+    moveRight.value = true;
+    setTimeout(() => {
+        showForm.value = true;
+    }, 700); // wait for animation
+};
 
-    try {
-        await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams);
-        successMessage.value = 'Your message has been sent successfully!';
-        form.value = { name: '', email: '', message: '' };
-    } catch (error) {
-        console.error('EmailJS Error:', error);
-        errorMessage.value = 'Something went wrong. Please try again.';
-    } finally {
-        loading.value = false;
-    }
+const handleSubmit = () => {
+    successMessage.value = "Message sent successfully! 🎉";
+    form.value = { name: '', email: '', message: '' };
+    setTimeout(() => {
+        successMessage.value = '';
+        showForm.value = false;
+        moveRight.value = false;
+    }, 3000);
 };
 </script>
+
+<style scoped>
+/* Raindrop Animation */
+.raindrop-enter-active {
+    animation: dropDown 0.8s ease-out;
+}
+
+@keyframes dropDown {
+    0% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+</style>

@@ -1,0 +1,37 @@
+[
+    {
+        "title": "Certificate of Achievement - Youth Speak Forum 2024",
+        "issuer": "AIESEC in Tangier",
+        "date": "March 2024",
+        "image": "/images/1.certification.jpg",
+        "description": "Awarded for exceptional participation and securing 3rd place in the Youth Speak Forum MAGHREB for SDGs 2024, organized by AIESEC in Tangier. This accolade reflects my proactive engagement in promoting the United Nations Sustainable Development Goals (SDGs) and contributing innovative ideas toward youth-driven initiatives."
+    },
+    {
+        "title": "Certificate of Participation - IT Day'z Hackathon 2024",
+        "issuer": "Computer Science Club (CSC)",
+        "date": "April 19-21, 2024",
+        "image": "/images/4.certification.jpg",
+        "description": "Participated in the IT Day'z Hackathon organized by the Computer Science Club (CSC) in Tangier. Secured 5th place in this competitive event, showcasing my team's skills and creativity in the field of technology and innovation."
+    },
+    {
+        "title": "Certificate of Participation - Soli-Hackathon by IT-Wave 2024",
+        "issuer": "IT-Wave",
+        "date": "May 16, 2024",
+        "image": "/images/6.certification.jpg",
+        "description": "Participated and presented my team 'SoliCode' in the Soli-Hackathon organized by IT-Wave. The event brought together innovative solutions from diverse teams, and we demonstrated creativity and teamwork with our project."
+    },
+    {
+        "title": "Certificate of Participation - IoT in Energy Sector Workshop - IT Day'z 2024",
+        "issuer": "IT Day'z - Computer Science Club (CSC)",
+        "date": "April 19-21, 2024",
+        "image": "/images/3.certification.jpg",
+        "description": "Attended a workshop on the Internet of Things (IoT) in the energy sector, organized by IT Day'z and the Computer Science Club (CSC) in Tangier. The workshop covered the role of IoT in transforming energy systems and its impact on sustainability."
+    },
+    {
+        "title": "Completed the Vue.js Mastery course by Vue School",
+        "issuer": "Vue School",
+        "date": "March 2024",
+        "image": "/images/8.certification.jpg",
+        "description": "Completed the Vue.js Mastery course by Vue School, gaining in-depth knowledge and hands-on experience in building modern web applications using Vue.js."
+    }
+]

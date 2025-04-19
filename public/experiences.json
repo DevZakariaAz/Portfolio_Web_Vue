@@ -19,15 +19,6 @@
     },
     {
         "id": 3,
-        "title": "WordPress Developer Intern",
-        "company": "HODM",
-        "location": "Tanger, Morocco",
-        "start_date": "2024-06-01",
-        "end_date": "2024-07-01",
-        "description": "Assisted in developing and maintaining WordPress websites for clients. Customized themes and plugins, worked on the back-end, and ensured responsive design across platforms. Gained experience in SEO optimization and troubleshooting WordPress issues."
-    },
-    {
-        "id": 4,
         "title": "Workshop Contributor - Git and GitHub for IT Students",
         "company": "SoliCode Tanger",
         "location": "Tanger, Morocco",
@@ -36,12 +27,26 @@
         "description": "Contributed to a team workshop on Git and GitHub for IT students. Collaborated with team members to cover essential topics such as version control, branching, pull requests, and collaboration best practices."
     },
     {
-        "id": 5,
+        "id": 4,
         "title": "Workshop Contributor - Networks and Networking Fundamentals for IT Students",
         "company": "SoliCode Tanger",
         "location": "Tanger, Morocco",
         "start_date": "2025-02-20",
         "end_date": "2025-02-20",
         "description": "Worked as part of a team to deliver a workshop on computer networking fundamentals. Helped prepare and present topics such as network types, IP addressing, and networking protocols for IT students."
+    },
+    {
+        "id": 5,
+        "title": "Développeur Full-Stack (Stage)",
+        "company": "Centre de Service à la Jeunesse Hay Hassani",
+        "location": "Tanger, Morocco",
+        "start_date": "2024-01-01",
+        "end_date": "2024-03-01",
+        "description": "L'application consiste en le développement et la gestion des outils internes pour les services à la jeunesse, incluant la gestion des utilisateurs et la communication entre les équipes.",
+        "technologies": [
+            "PHP",
+            "Laravel",
+            "MySQL"
+        ]
     }
 ]

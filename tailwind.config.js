@@ -4,11 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#FDC435",
+        primary: "#1ABC9C",
       },
       fontFamily: {
-        playfair: ["Playfair Display", "serif"],
-        nunito: ["Nunito", "sans-serif"],
+        playfair: ["Merriweather", "serif"],
+        nunito: ["Source Sans Pro", "sans-serif"],
       },
     },
   },

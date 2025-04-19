@@ -41,6 +41,12 @@
                     </button>
                 </li>
                 <li>
+                    <button @click="scrollToSection('certifications')" class="nav-link"
+                        :class="{ 'active-link': activeSection === 'certifications' }">
+                        🏅 Certifications
+                    </button>
+                </li>
+                <li>
                     <router-link to="/resume" @click="scrollToSection('/resume')" class="nav-link"
                         :class="{ 'active-link': activeSection === '/resume' }">
                         📄 Resume
